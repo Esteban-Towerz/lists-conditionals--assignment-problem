@@ -1,7 +1,7 @@
 
-# \ React.js practice
+# React.js practice
 
-![react](https://user-images.githubusercontent.com/25851867/44185174-656fb580-a0d8-11e8-972f-79d40648eb7b.jpg)
+<img width="734" alt="screenshot 2018-08-16 11 16 53" src="https://user-images.githubusercontent.com/25851867/44221252-79520080-a146-11e8-861c-2e295d7b1981.png">
 
 
 ## Project Requirements
