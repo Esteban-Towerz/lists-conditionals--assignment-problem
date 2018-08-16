@@ -8,6 +8,13 @@ class App extends Component {
     userInput: ''
   }
 
+  deleteCharHandler = (index) => {
+    const text = this.state.userInput.split('');
+    text.splice(index, 1);
+    const updatedText = text.join('');
+    this.setState({ userInput: updatedText });
+  }
+
   inputChangeHandler = (event) => {
     this.setState({ userInput: event.target.value });
   }
@@ -16,8 +23,20 @@ class App extends Component {
 
   render() {
     const charList = this.state.userInput.split('').map((ch, index) => {
-      return <Char character={ch} key={index} />;
+      return <Char
+        character={ch}
+        key={index}
+        clicked={() => this.deleteCharHandler(index)} />;
     });
+
+    const style = {
+      border: '1px solid lightGrey',
+      fontSize: '2em',
+      color: '#4885ed',
+      padding: '12px 20px',
+      margin: '8px 0',
+      borderRadius: '4px',
+    }
 
     return (
       <div className="App">
@@ -34,7 +53,9 @@ class App extends Component {
         <input
           type="text"
           onChange={this.inputChangeHandler}
-          value={this.state.userInput} />
+          value={this.state.userInput}
+          style={style}
+          placeholder="Type something.." />
         <p>{this.state.userInput}</p>
         <Validation
           inputLength={this.state.userInput.length} />

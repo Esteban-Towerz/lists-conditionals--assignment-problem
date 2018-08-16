@@ -2,16 +2,18 @@ import React from 'react';
 
 const char = (props) => {
     const styles = {
-        display: 'inline-block',
-        border: '1px solid tomato',
-        padding: '16px',
-        color: 'tomato',
-        margin: '16px',
-        textAlign: 'center'
+        padding: '12px 20px',
+        color: '#db3236',
+        cursor: 'pointer',
+        border: '.6px solid slateGrey',
+        fontSize: '2em',
+        margin: '8px 8px',
+        borderRadius: '4px',
+        display: 'inline-block'
     }
 
     return (
-        <div style={styles}>
+        <div style={styles} onClick={props.clicked}>
             {props.character}
         </div>
     );
