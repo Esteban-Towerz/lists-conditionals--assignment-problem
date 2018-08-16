@@ -1,9 +1,7 @@
 
 # \ React.js practice
 
-a user can book a hotel, a flight, a car a tour all in one platform.
-
-![reactsticker](https://user-images.githubusercontent.com/25851867/44185116-0f027700-a0d8-11e8-9ace-bdc407a5fc43.png)
+![react](https://user-images.githubusercontent.com/25851867/44185174-656fb580-a0d8-11e8-972f-79d40648eb7b.jpg)
 
 
 ## Project Requirements
